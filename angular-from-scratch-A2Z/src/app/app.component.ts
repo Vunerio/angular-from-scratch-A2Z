@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-from-scratch-A2Z';
+  title = 'Angular From Scratch (A to Z)';
 }
