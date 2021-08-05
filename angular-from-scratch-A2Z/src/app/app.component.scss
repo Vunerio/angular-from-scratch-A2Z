@@ -206,21 +206,13 @@
     margin-right: 4px;
   }
 
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
-  }
-
 /*------- Footer -------*/
 
   footer {
     position: fixed;
     width: 100%;
-	left: 0;
-	bottom: 0;
+	  left: 0;
+	  bottom: 0;
     color:#222222;
   }
 
@@ -299,43 +291,44 @@
     text-align:center;
     padding-bottom:25px;
   }
-  
-  .copyright {
-    font-size:13px;
-    color:#000000;
-    margin-top:7.8em;
-    margin-left:5em;
-    margin-bottom:2em;
+
+  @media only screen and (min-width: 845px) {
+    .copyright {
+      font-size:13px;
+      color:#000000;
+      margin-top:7.9em;
+      margin-left:5em;
+      margin-bottom:2em;
+    }
+
+    svg#clouds {
+      position: fixed;
+      bottom: -160px;
+      left: -230px;
+      z-index: -10;
+      width: 1920px;
+    }
   }
 
 
 /*------- Screens -------*/
 
 /* Responsive Styles */
-@media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
+@media only screen and (max-width: 845px) {
 
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card h2 {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
+  .copyright {
+    text-align:center;
+    font-size:13px;
+    color:#000000;
+    margin-top:1em;
+    margin-bottom:2em;
   }
 
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
   }
+}
