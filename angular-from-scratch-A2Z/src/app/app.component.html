@@ -50,7 +50,12 @@
         </ul>
         <br>
         <!-- Property Binding -->
-        <button class="btn btn-success" [disabled]="!isAuth">Tout Allumer</button>
+        <!-- Event Binding -->
+        <button class="btn btn-success" 
+                [disabled]="!isAuth"
+                (click)="onAllumer()">
+          Tout Allumer
+        </button>
       </div>
     </div>
   </div>
