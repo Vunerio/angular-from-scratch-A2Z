@@ -42,11 +42,15 @@
     <div class="row">
       <div class="col-xs-12">
         <h2>Mes Appareils</h2>
+        <br>
         <ul class="list-group">
           <app-appareil></app-appareil>
           <app-appareil></app-appareil>
           <app-appareil></app-appareil>
         </ul>
+        <br>
+        <!-- Property Binding -->
+        <button class="btn btn-success" [disabled]="!isAuth">Tout Allumer</button>
       </div>
     </div>
   </div>

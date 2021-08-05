@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular From Scratch (A to Z)';
+
+  isAuth = false;
+
+  constructor() {
+    setTimeout(
+      () => {
+        this.isAuth = true;
+      }, 4000
+    );
+  }
 }
