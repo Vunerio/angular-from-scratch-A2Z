@@ -10,6 +10,10 @@ export class AppComponent {
 
   isAuth = false;
 
+  appareilOne   = "Machine à laver";
+  appareilTwo   = "Télévion";
+  appareilThree = "Ordinateur";
+
   constructor() {
     setTimeout(
       () => {
