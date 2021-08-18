@@ -16,8 +16,8 @@ export class AppareilComponent implements OnInit {
    */
   @Input()
   appareilName!: string;
-
-  appareilStatus = 'Éteint';
+  @Input()
+  appareilStatus!: string;
 
   constructor() { }
 
