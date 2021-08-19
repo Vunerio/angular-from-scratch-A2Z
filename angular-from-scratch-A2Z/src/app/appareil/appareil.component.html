@@ -3,7 +3,7 @@
     <div style="width: 20px; height: 20px; background-color: red;"
          *ngIf="appareilStatus === 'Éteint'">
     </div>
-    <!-- L'interpolation -->
+    <!-- L'interpolation {{}} -->
     <!-- Directive par Attribut ngStyle -->
     <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
     <!-- Two-way Binding -->
