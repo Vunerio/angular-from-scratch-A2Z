@@ -14,10 +14,8 @@ export class AppareilComponent implements OnInit {
    * `@Input()` lets a parent component update data in the child component.
    * `@Output()` lets the child send data to a parent component.
    */
-  @Input()
-  appareilName!: string;
-  @Input()
-  appareilStatus!: string;
+  @Input() appareilName!: string;
+  @Input() appareilStatus!: string;
 
   constructor() { }
 
@@ -26,5 +24,13 @@ export class AppareilComponent implements OnInit {
 
   getStatus() {
     return this.appareilStatus;
+  }
+
+  getColor() {
+    if(this.appareilStatus === 'Allumé') {
+      return 'green';
+    } else {
+      return 'red';
+    }
   }
 }
