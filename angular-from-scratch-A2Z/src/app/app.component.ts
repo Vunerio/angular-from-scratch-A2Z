@@ -10,9 +10,20 @@ export class AppComponent {
 
   isAuth = false;
 
-  appareilOne   = "Machine à laver";
-  appareilTwo   = "Télévion";
-  appareilThree = "Ordinateur";
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'Éteint'
+    },
+    {
+      name: 'Télévion',
+      status: 'Allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'Éteint'
+    }
+  ];
 
   constructor() {
     setTimeout(

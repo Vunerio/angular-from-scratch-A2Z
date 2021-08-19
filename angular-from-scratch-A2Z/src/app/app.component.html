@@ -44,9 +44,11 @@
         <h2>Mes Appareils</h2>
         <br>
         <ul class="list-group">
-          <app-appareil [appareilName]="appareilOne"   [appareilStatus]="'Éteint'"></app-appareil>
-          <app-appareil [appareilName]="appareilTwo"   [appareilStatus]="'Allumé'"></app-appareil>
-          <app-appareil [appareilName]="appareilThree" [appareilStatus]="'Éteint'"></app-appareil>
+          <!-- Directive Structurelle ngFor -->
+          <app-appareil *ngFor="let appareil of appareils"
+                         [appareilName]="appareil.name"
+                         [appareilStatus]="appareil.status">
+          </app-appareil>
         </ul>
         <br>
         <!-- Property Binding -->
