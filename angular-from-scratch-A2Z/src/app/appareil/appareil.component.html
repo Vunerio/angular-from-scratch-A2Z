@@ -1,4 +1,8 @@
 <li class="list-group-item">
+    <!-- Directive Structurelle ngIf -->
+    <div style="width: 20px; height: 20px; background-color: red;"
+         *ngIf="appareilStatus === 'Éteint'">
+    </div>
     <!-- L'interpolation -->
     <h4>Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
     <!-- Two-way Binding -->
