@@ -1,4 +1,8 @@
-<li class="list-group-item">
+<!-- Directive par Attribut ngClass -->
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': appareilStatus ==='Allumé',
+                'list-group-item-danger': appareilStatus ==='Éteint'}">
+
     <!-- Directive Structurelle ngIf -->
     <div style="width: 20px; height: 20px; background-color: red;"
          *ngIf="appareilStatus === 'Éteint'">
