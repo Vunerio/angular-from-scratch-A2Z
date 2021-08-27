@@ -17,7 +17,12 @@ export class AppComponent implements OnInit {
       const date = new Date();
       setTimeout(
         () => {
-          resolve(date.getFullYear() + "/" + date.getMonth() + "/" + date.getDay() + ", " + date.getHours() + ":" + date.getMinutes());
+          let zeroDecimalOfMinutes: string = "";
+          if (date.getMinutes() < 9) {
+            zeroDecimalOfMinutes = "0";
+          }
+            
+          resolve(date.getFullYear() + "/" + date.getMonth() + "/" + date.getDay() + ", " + date.getHours() + ":" + zeroDecimalOfMinutes + date.getMinutes());
         }, 2000
       );
     }
