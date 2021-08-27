@@ -13,4 +13,16 @@ export class AppareilService {
       status: 'Éteint'
     }
   ];
+
+  switchOnAll() {
+    for (let appareil of this.appareils) {
+      appareil.status = 'Allumé';
+    }
+  }
+
+  switchOffAll() {
+    for (let appareil of this.appareils) {
+      appareil.status = 'Éteint';
+    }
+  }
 }

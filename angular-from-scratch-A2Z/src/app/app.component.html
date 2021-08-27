@@ -55,10 +55,14 @@
         <br>
         <!-- Property Binding [] -->
         <!-- Event Binding () -->
-        <button class="btn btn-success" 
-                [disabled]="!isAuth"
+        <button class="btn btn-success"
                 (click)="onAllumer()">
           Tout Allumer
+        </button>
+
+        <button class="btn btn-danger"
+                (click)="onEteindre()">
+          Tout Éteindre
         </button>
       </div>
     </div>
