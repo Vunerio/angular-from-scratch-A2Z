@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppareilService } from './services/appareil.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { AppareilService } from './services/appareil.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Angular From Scratch (A to Z)';
 
   isAuth = false;
@@ -23,20 +23,7 @@ export class AppComponent {
     }
   );
 
-  appareils = [
-    {
-      name: 'Machine à laver',
-      status: 'Éteint'
-    },
-    {
-      name: 'Télévion',
-      status: 'Allumé'
-    },
-    {
-      name: 'Ordinateur',
-      status: 'Éteint'
-    }
-  ];
+  appareils!: any[];
 
   constructor(private appareilService: AppareilService) {
     setTimeout(
@@ -44,6 +31,10 @@ export class AppComponent {
         this.isAuth = true;
       }, 4000
     );
+  }
+
+  ngOnInit() {
+    this.appareils = this.appareilService.appareils;
   }
 
   onAllumer() {
