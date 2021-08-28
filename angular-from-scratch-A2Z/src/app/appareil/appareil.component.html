@@ -3,13 +3,28 @@
                 'list-group-item-success': appareilStatus ==='Allumé',
                 'list-group-item-danger': appareilStatus ==='Éteint'}">
 
-    <!-- Directive Structurelle ngIf -->
-    <div style="width: 20px; height: 20px; background-color: red;"
-         *ngIf="appareilStatus === 'Éteint'">
-    </div>
-    <!-- L'interpolation {{}} -->
-    <!-- Directive par Attribut ngStyle -->
-    <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
-    <!-- Two-way Binding -->
-    <input type="text" class="form-control" [(ngModel)]="appareilName">
+  <!-- Directive Structurelle ngIf -->
+  <div style="width: 20px; height: 20px; background-color: red;"
+       *ngIf="appareilStatus === 'Éteint'">
+  </div>
+  <div style="width: 20px; height: 20px; background-color: green;"
+       *ngIf="appareilStatus === 'Allumé'">
+  </div>
+  <!-- L'interpolation {{}} -->
+  <!-- Directive par Attribut ngStyle -->
+  <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
+  <!-- Two-way Binding -->
+  <input type="text" class="form-control" [(ngModel)]="appareilName">
+
+  <button class="btn btn-success"
+          (click)="onSwitchOn()"
+          [disabled]="appareilStatus === 'Allumé'">
+    Allumer   
+  </button>
+
+  <button class="btn btn-danger"
+          (click)="onSwitchOff()"
+          [disabled]="appareilStatus === 'Éteint'">
+    Éteindre   
+  </button>
 </li>

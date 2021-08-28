@@ -47,9 +47,10 @@
         <br>
         <ul class="list-group">
           <!-- Directive Structurelle ngFor -->
-          <app-appareil *ngFor="let appareil of appareils"
-                         [appareilName]="appareil.name"
-                         [appareilStatus]="appareil.status">
+          <app-appareil *ngFor="let appareil of appareils; let i = index"
+                        [indexOfAppareil] = "i"
+                        [appareilName]="appareil.name"
+                        [appareilStatus]="appareil.status">
           </app-appareil>
         </ul>
         <br>
