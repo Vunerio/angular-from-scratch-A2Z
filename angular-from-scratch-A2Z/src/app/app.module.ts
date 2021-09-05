@@ -9,13 +9,17 @@ import { AppareilComponent } from './appareil/appareil.component';
 
 import { AppareilService } from './services/appareil.service';
 import { FooterComponent } from './footer/footer.component';
+import { AuthComponent } from './auth/auth.component';
+import { AppareilViewComponent } from './appareil-view/appareil-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonPremierComponent,
     AppareilComponent,
-    FooterComponent
+    FooterComponent,
+    AuthComponent,
+    AppareilViewComponent
   ],
   imports: [
     BrowserModule,
