@@ -8,6 +8,8 @@ import { AppareilService } from '../services/appareil.service';
 })
 export class AppareilViewComponent implements OnInit {
 
+  title = 'Angular From Scratch (A to Z)';
+  
   isAuth = false;
 
   // The async pipe subscribes to an Observable or Promise and returns the latest value it has emitted.

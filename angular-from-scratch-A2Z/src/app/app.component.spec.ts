@@ -20,11 +20,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-from-scratch-A2Z'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-from-scratch-A2Z');
-  });
+  // it(`should have as title 'angular-from-scratch-A2Z'`, () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.componentInstance;
+  //   expect(app.title).toEqual('angular-from-scratch-A2Z');
+  // });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
