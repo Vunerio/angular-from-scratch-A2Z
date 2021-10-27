@@ -37,6 +37,6 @@ const appRoutes: Routes = [
   providers: [
     AppareilService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, FooterComponent]
 })
 export class AppModule { }

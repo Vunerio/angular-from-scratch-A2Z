@@ -1,4 +1,4 @@
-.footer {
+.footer-basic {
   position: absolute;
   width: 100%;
   left: 0;
@@ -39,6 +39,8 @@
 
 
 /*--------------*/
+
+
 .card-container .card:not(.highlight-card):hover .material-icons path {
   fill: rgb(105, 103, 103);
 }
