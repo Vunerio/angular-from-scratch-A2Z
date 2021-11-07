@@ -25,7 +25,7 @@ p {
 }
 
 .toolbar {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -56,6 +56,38 @@ p {
   opacity: 0.8;
 }
 
+.nav{
+  height:100%;
+  border-color: white;
+}
+
+.nav-link {
+  height:100%;
+  padding-top: 17px;
+  color: white;
+}
+
+.nav-link.active {
+  //color: #0D47A1;
+  color: #C3002F;
+  background-color: white;
+}
+
+.nav-link.active:hover {
+  //color: #0D47A1;
+  //color: white;
+  //background-color: #d0e2f5;
+  background-color: #ffb5c5;
+  transition: 0.1s;
+}
+
+.nav-link:hover {
+  //color: #0D47A1;
+  //background-color: #7FB0E1;
+  background-color: #DD0031;
+  transition: 0.1s;
+}
+
 body, html {
   height:100%;
   margin:0;
@@ -64,7 +96,7 @@ body, html {
 :host ::ng-deep app-appareil-view .content {
   position:relative;
   display: flex;
-  margin: 82px auto 32px;
+  margin: 22px auto 32px;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
