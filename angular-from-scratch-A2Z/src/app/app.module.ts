@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
 
 const appRoutes: Routes = [
   { path: 'appareils', component: AppareilViewComponent },
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     AppareilComponent,
     FooterComponent,
     AuthComponent,
-    AppareilViewComponent
+    AppareilViewComponent,
+    SingleAppareilComponent
   ],
   imports: [
     BrowserModule,
