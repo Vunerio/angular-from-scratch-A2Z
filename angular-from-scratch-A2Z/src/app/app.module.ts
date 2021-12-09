@@ -17,6 +17,7 @@ import { SingleAppareilComponent } from './single-appareil/single-appareil.compo
 
 const appRoutes: Routes = [
   { path: 'appareils', component: AppareilViewComponent },
+  { path: 'appareils/:id', component: SingleAppareilComponent },
   { path: 'auth', component: AuthComponent },
   { path: '', component: AppareilViewComponent }
 ];
